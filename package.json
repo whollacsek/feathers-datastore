@@ -1,0 +1,41 @@
+{
+  "name": "feathers-datastore",
+  "version": "1.0.0",
+  "description": "Google Cloud Dastore adapter for feathersjs",
+  "main": "lib/index.js",
+  "scripts": {
+    "mocha": "mocha --opts mocha.opts",
+    "test": "npm run mocha",
+    "compile": "rimraf lib/ && babel -d lib/ src/",
+    "watch": "babel --watch -d lib/ src/"
+  },
+  "engines": {
+    "node": "~6.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whollacsek/feathers-datastore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whollacsek/feathers-datastore/issues"
+  },
+  "homepage": "https://github.com/whollacsek/feathers-datastore#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.3.3",
+    "babel-preset-stage-3": "^6.24.1",
+    "chai": "^3.5.0",
+    "feathers": "^2.1.1",
+    "feathers-service-tests": "^0.9.3",
+    "mocha": "^3.2.0",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "@google-cloud/datastore": "^0.8.0",
+    "arrify": "^1.0.1",
+    "feathers-errors": "^2.6.3"
+  }
+}

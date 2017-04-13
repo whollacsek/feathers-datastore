@@ -1,0 +1,7 @@
+.babelrc
+.idea/
+src/
+test/
+!lib/
+mocha.opts
+*.log
